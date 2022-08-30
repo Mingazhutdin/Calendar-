@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <h1 class="header__title">Work Day Scheduler</h1>
+        <p class="header__description">
+          A simple calendar app for scheduler your work day <br />
+          <span class="header__date"></span>
+        </p>
+      </div>
+    </header>
+    <section class="todo">
+      <div class="container">
+        <div class="todo__hour">
+          <div class="todo__time">
+            <span id="h-3"></span>
+          </div>
+          <div class="todo__text todo__text_passed">
+            <textarea class="todo__inp" id="i-3"></textarea>
+          </div>
+          <button class="todo__save" id="b0">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M14 3h2.997v5h-2.997v-5zm9 1v20h-22v-24h17.997l4.003 4zm-17 5h12v-7h-12v7zm14 4h-16v9h16v-9z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="todo__hour">
+          <div class="todo__time">
+            <span id="h-2"></span>
+          </div>
+          <div class="todo__text todo__text_passed">
+            <textarea class="todo__inp" id="i-2"></textarea>
+          </div>
+          <button class="todo__save" id="b1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M14 3h2.997v5h-2.997v-5zm9 1v20h-22v-24h17.997l4.003 4zm-17 5h12v-7h-12v7zm14 4h-16v9h16v-9z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="todo__hour">
+          <div class="todo__time">
+            <span id="h-1"></span>
+          </div>
+          <div class="todo__text todo__text_passed">
+            <textarea class="todo__inp" id="i-1"></textarea>
+          </div>
+          <button class="todo__save" id="b2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M14 3h2.997v5h-2.997v-5zm9 1v20h-22v-24h17.997l4.003 4zm-17 5h12v-7h-12v7zm14 4h-16v9h16v-9z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="todo__hour">
+          <div class="todo__time">
+            <span id="h0"></span>
+          </div>
+          <div class="todo__text todo__text_current">
+            <textarea class="todo__inp" id="i0"></textarea>
+          </div>
+          <button class="todo__save" id="b3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M14 3h2.997v5h-2.997v-5zm9 1v20h-22v-24h17.997l4.003 4zm-17 5h12v-7h-12v7zm14 4h-16v9h16v-9z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="todo__hour">
+          <div class="todo__time">
+            <span id="h1"></span>
+          </div>
+          <div class="todo__text todo__text_future">
+            <textarea class="todo__inp" id="i1"></textarea>
+          </div>
+          <button class="todo__save" id="b4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M14 3h2.997v5h-2.997v-5zm9 1v20h-22v-24h17.997l4.003 4zm-17 5h12v-7h-12v7zm14 4h-16v9h16v-9z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="todo__hour">
+          <div class="todo__time">
+            <span id="h2"></span>
+          </div>
+          <div class="todo__text todo__text_future">
+            <textarea class="todo__inp" id="i2"></textarea>
+          </div>
+          <button class="todo__save" id="b5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M14 3h2.997v5h-2.997v-5zm9 1v20h-22v-24h17.997l4.003 4zm-17 5h12v-7h-12v7zm14 4h-16v9h16v-9z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="todo__hour">
+          <div class="todo__time">
+            <span id="h3"></span>
+          </div>
+          <div class="todo__text todo__text_future">
+            <textarea class="todo__inp" id="i3"></textarea>
+          </div>
+          <button class="todo__save" id="b6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M14 3h2.997v5h-2.997v-5zm9 1v20h-22v-24h17.997l4.003 4zm-17 5h12v-7h-12v7zm14 4h-16v9h16v-9z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="todo__hour">
+          <div class="todo__time">
+            <span id="h4"></span>
+          </div>
+          <div class="todo__text todo__text_future">
+            <textarea class="todo__inp" id="i4"></textarea>
+          </div>
+          <button class="todo__save" id="b7">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M14 3h2.997v5h-2.997v-5zm9 1v20h-22v-24h17.997l4.003 4zm-17 5h12v-7h-12v7zm14 4h-16v9h16v-9z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="todo__hour">
+          <div class="todo__time">
+            <span id="h5"></span>
+          </div>
+          <div class="todo__text todo__text_future">
+            <textarea class="todo__inp" id="i5"></textarea>
+          </div>
+          <button class="todo__save" id="b8">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M14 3h2.997v5h-2.997v-5zm9 1v20h-22v-24h17.997l4.003 4zm-17 5h12v-7h-12v7zm14 4h-16v9h16v-9z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"
+    >
+      moment().format()
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>
